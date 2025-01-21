@@ -1,0 +1,28 @@
+{
+  "license": "MIT",
+  "name": "esm-and-cjs-publish-demo",
+  "version": "0.1.0",
+  "type": "module",
+  "types": "./dist/esm/index.d.ts",
+  "main": "./dist/cjs/index.cjs",
+  "module": "./dist/esm/index.js",
+  "exports": {
+    ".": {
+      "types": "./dist/esm/index.d.ts",
+      "require": "./dist/cjs/index.cjs",
+      "import": "./dist/esm/index.js"
+    }
+  },
+  "scripts": {
+    "build:esm": "tsc --module ESNext --outDir dist/esm",
+    "build:cjs": "tsc --module CommonJS --outDir dist/cjs --declaration false && mv dist/cjs/index.js dist/cjs/index.cjs",
+    "prepublishOnly": "yarn build:esm && yarn build:cjs",
+    "postpublish": "rm -rf dist"
+  },
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "typescript": "^5.7.3"
+  }
+}
