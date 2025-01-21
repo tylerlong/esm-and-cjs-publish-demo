@@ -5,6 +5,8 @@ npmjs.com.
 
 The published library should work for both ESM and CJS projects.
 
+For more details, refer to the `package.json` file.
+
 ## Notes
 
 We created a `tsconfig.json` file, its content is an empty json object: `{}`,
