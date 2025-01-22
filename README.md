@@ -5,7 +5,7 @@ npmjs.com.
 
 The published library should work for both ESM and CJS projects.
 
-For more details, refer to the `package.json` file.
+Article: https://markplus.io/post/7e24ed57-72f8-4fdd-a0a9-7dc6a7465ea8
 
 ## Notes
 

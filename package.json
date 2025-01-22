@@ -1,7 +1,7 @@
 {
   "license": "MIT",
   "name": "esm-and-cjs-publish-demo",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "homepage": "https://github.com/tylerlong/esm-and-cjs-publish-demo",
   "type": "module",
   "sideEffects": false,
